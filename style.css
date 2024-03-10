@@ -818,20 +818,23 @@ nav{
       position: absolute;
       right: 40px;
       background-color:#303030;
-      min-width: 160px;
       padding: 20px 16px;
       z-index: 1;
     }
     .dropdown-content a {
         text-decoration: none;
         color:#ffffff;
-        margin-top: 10px;
         font-size: 18px;
+        margin: 10px;
         
     }
     .menu:hover .dropdown-content {
-        display: block;
-      }
+display: flex;
+flex-direction: column;
+   
+
+
+}
     .hero-title {
         font-size: 40px;
     }
