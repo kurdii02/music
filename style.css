@@ -42,6 +42,28 @@ ol {
     max-width: 2%;
     height: 30px;
 }
+ .menu{
+ 
+ display: none;
+}
+.top{
+    background-color:#ffffff;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+}
+.center{
+    background-color:#ffffff;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+}
+.bottom{
+    background-color:#ffffff;
+    width: 30px;
+    height: 2px;
+}
+
 
 .hero-section {
     background-image: url("tools/body/hero.png");
@@ -777,19 +799,31 @@ font-size: 20px;
 
 
 @media (max-width: 576px){
-    .nav-li {
-        font-size: 12px;
+   
+    nav li, .search{
+        display: none;
     }
-    .search{
-        height: 20px;
+nav{
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+  
+    nav .menu{
+        display: inline;
+       
     }
     .hero-title {
         font-size: 40px;
     }
-
+    .hero-section{
+        padding: 50px 10px;
+    }
+    .hero-text {
+    margin: 0;
+    }
     .hero-p {
         font-size: 20px;
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .reg-btn {
@@ -815,6 +849,7 @@ font-size: 20px;
     .flip-card-back p{
         font-size: 15px;
     }
+  
 
     .statistics-title h2 {
         font-size: 35px;
@@ -886,7 +921,12 @@ form{
 ::placeholder{
     font-size: 14px;
 }
-
+footer{
+    flex-direction: column;
+}
+footer h5{
+    margin-top: 10px;
+}
 }
 
 
