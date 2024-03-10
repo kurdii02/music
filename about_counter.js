@@ -32,10 +32,23 @@ $('#number3').jQuerySimpleCounter({end: 25,duration: 3000});
 
 $('#partnersSlider').slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,         
-
     nextArrow: '<i class="fa fa-arrow-right"></i>',
   prevArrow: '<i class="fa fa-arrow-left"></i>',
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
 });
