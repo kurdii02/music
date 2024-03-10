@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #303030;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+ol {
+    list-style-type: none;
+    display: flex;
+   
+
+}
+
+.nav-li {
+    margin: 0 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.logo {
+    width: 100px;
+
+
+}
+
+.search {
+    max-width: 2%;
+    height: 30px;
+}
+
+.hero-section {
+    background-image: url("tools/body/hero.png");
+    background-size: cover;
+    background-position: bottom;
+    padding: 50px 20px;
+   
+
+}
+
+.hero-title {
+    font-size: 125px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero-p {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-bottom: 40px;
+    max-width: 500px; /* Set maximum width for the paragraph */
+    
+}
+
+.hero-text {
+
+    margin-top: 200px;
+    margin-left: 60px;
+  
+
+}
+
+.reg-btn {
+    width: 322px;
+height: 65px;
+    border-radius: 5px;
+    background-color: #e8631c;
+    font-size: 29px;
+    color: #ffffff;
+    font-family: "Oswald";
+
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dance-tour-section {
+    background-color: #e8631c;
+    padding: 70px 20px;
+    text-align: center;
+    background-image: url("tools/dance_section/Shape.png");
+    background-position-x: -500px;
+    background-position-y: -400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dance-section-title h2 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+
+}
+
+.dance-section-title p {
+    max-width: 900px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.card {
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    background-color: #303030;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.card h5 {
+    font-size: 37px;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.card p {
+    font-size: 22px;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: "Montserrat";
+text-align: center;
+    max-width: 400px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Ensure proper positioning */
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+
+  .card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-card-front,
+.flip-card-back {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex; /* Adjust display for flexbox */
+    flex-direction: column; /* Stack content vertically */
+   
+    align-items: center; /* Center content horizontally */
+}
+
+.flip-card-front {
+    background-color: #303030;
+    color: #ffffff;
+    padding-bottom:20px ;
+    text-align: center;
+    z-index: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+ 
+.flip-card-back {
+   
+    background-color: #303030;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    transform: rotateY(180deg);
+    z-index: 1; 
+   
+}
+.flip-card-front img,
+.flip-card-back img {
+    width: 100%;
+    height: auto; 
+}
+
+.pricing-section{
+ background-color: #303030;
+padding: 100px 20px;
+text-align: center;
+background-color: #303030;
+background-image: url("tools/pricing_section/Shape.png");
+background-position-x: -500px;
+background-position-y: -400px;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.pricing-card{
+    width: 390px;
+    height: 480px;
+    margin: 20px;
+    padding: 40px 20px;
+    background-color: #e8631c;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.pricing-card img{
+    width:100px;
+    height: 120px;
+}
+
+.pricing-btn{
+    width: 90%;
+height: 65px;
+border-radius: 4px;
+background-color: #303030;
+font-size: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Oswald";
+text-align: center;
+border: none;
+}
+
+
+.pricing-btn:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.5s;
+}
+
+.pricing-section-title p{
+   max-width: 900px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 40px;
+    
+}
+.pricing-section-title h2 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+.pricing-card h5{
+    font-size: 37px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+.pricing-card p{
+   
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-bottom:20px ;
+}
+
+.under-pricing-section{
+    height: 1039px;
+    display: flex;
+    justify-content: space-between;
+background-color: #e8631c;
+}
+
+.under-pricing-section img{
+    max-width: 50%;
+  
+}
+@media (max-width: 768px) {
+    .under-pricing-section img {
+        display: none; 
+    }
+}
+
+.under-pricing-section h2{
+
+    font-size: 75px;
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 700;
+font-family: "Oswald";
+}
+
+.under-pricing-section p{
+font-size: 30px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: left;
+margin: 70px 0 70px 0;
+
+}
+
+.under-pricing-section button{
+    width: 322px;
+height: 65px;
+border-radius: 4px;
+background-color: #303030;
+font-size: 29px;
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 400;
+font-family: "Oswald";
+text-align: center;
+border: none;
+}
+
+.under-pricing-section button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.5s;
+}
+
+
+
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 50px;
+   
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 50px;
+    background-image: url("tools/pricing_section/best_dance_shape.png");
+    background-position-x:-300px;
+    background-position-y:200px;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.statistics{
+    background-color: #303030;
+    padding: 150px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.statistics-title h2{
+    font-size: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+    margin-bottom: 40px;
+
+}
+
+.statistics-title p{
+    max-width:900px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-bottom: 80px;
+
+
+}
+
+.statistics-num{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.item{
+    margin: 0 100px;
+
+}
+
+.number1,.number2,.number3{
+    font-size: 67px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+    margin: 0;
+}
+.stat-desc {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.statistics-num .name{
+    
+
+font-size: 42px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+margin: 0;
+}
+.simon {
+    position: relative;
+    padding: 200px 20px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    background: linear-gradient(rgba(231,99,28,0.5), rgba(231,99,28,0.5)), url("tools/simon/simon.png"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+  
+
+
+.simon p{
+    max-width: 950px;
+
+font-size: 50px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Nunito Sans";
+text-align: center;
+margin: 0;
+}
+
+.simon h3{
+    font-size: 58px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+    margin: 0;
+    margin-top: 100px;
+}
+
+
+
+.subs{
+    padding: 200px 20px;
+    background-color:  #e8631c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+
+
+}
+
+.subs h3{
+    font-size: 75px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Oswald";
+text-align: center;
+margin-bottom: 20px;}
+
+.subs p{
+   max-width: 900px;
+font-size: 30px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+
+margin-bottom: 80px;
+
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+.subs input{
+    width: 70%;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    font-size: 25px;
+z-index: 1;
+
+
+
+}
+::placeholder{
+    opacity: 0.502;
+font-size: 25px;
+color: #000000;
+font-weight: 400;
+font-family: "Montserrat";
+position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.subs button{
+    width: 30%;
+    height: 57px;
+    border-radius: 4px;
+    background-color: #303030;
+    font-size: 25px;
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 600;
+font-family: "Oswald";
+text-align: center;
+border: none;
+z-index: 1;
+}
+.subs button:hover{
+    color: #e8631c;
+    transition: color 0.3s;
+}
+
+.right-img{
+    position: absolute;
+    left: 40%;
+width: 100%;
+
+
+}
+.left-img{
+    position: absolute;
+    right: 40%;
+    width: 100%;
+    z-index: 0;
+
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #303030;
+    padding: 50px 20px;
+    z-index: 0;
+    flex-wrap: wrap;
+
+}
+footer h5{
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    margin-bottom: 20px;
+}
+
+footer p{
+   max-width: 500px;
+
+font-size: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+}
+
+.about, .services, .other{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+footer a{
+    font-size: 25px;
+line-height: 44px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-decoration: none;
+}
+footer img{
+    margin: 10px 10px 0 0;
+}
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-list li:hover{
+    color: #e8631c;
+    transition: colot 0.5s;
+  
+}
+
+.hero-section button:hover{
+    background-color: #303030;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav-li {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 45px;
+    }
+
+    .hero-p {
+        font-size: 16px;
+        max-width: 400px;
+    }
+
+    .reg-btn {
+        width: 200px;
+        font-size: 20px;
+    }
+    .dance-tour-section{
+        background-image: none;
+    }
+
+    .dance-section-title h2 {
+        font-size: 40px;
+    }
+
+    .dance-section-title p {
+        font-size: 20px;
+        max-width: 600px;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    .pricing-section-title h2 {
+        font-size: 40px;
+    }
+
+    .pricing-section-title p {
+        font-size: 20px;
+    }
+
+    .pricing-card {
+        width: 70% ;
+    }
+.under-pricing-section{
+    height:700px;
+}
+
+    .statistics-title h2 {
+        font-size: 40px;
+    }
+
+    .statistics-title p {
+        font-size: 20px;
+    }
+
+    .number1,
+    .number2,
+    .number3 {
+        font-size: 40px;
+    }
+.item{
+    margin-bottom: 70px;
+}
+   .statistics .name{
+    font-size: 35px;
+   }
+
+    .simon h3 {
+        font-size: 40px;
+    }
+
+    .simon p {
+        font-size: 20px;
+        max-width: 400px;
+    }
+
+    .subs h3 {
+        font-size: 40px;
+    }
+
+    .subs p {
+        font-size: 20px;
+    }
+    .subs button{
+        font-size: 14px;
+        height: 53px;
+    }
+    .subs input{
+font-size: 20px;
+    }
+    ::placeholder{
+        font-size: 17px;
+    }
+
+    footer{
+        display: block;
+    }
+
+    footer h5{
+        margin-top: 50px;
+    }
+}
+
+
+
+@media (max-width: 576px){
+    .nav-li {
+        font-size: 12px;
+    }
+    .search{
+        height: 20px;
+    }
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-p {
+        font-size: 20px;
+        max-width: 400px;
+    }
+
+    .reg-btn {
+        width: 150px;
+        font-size: 16px;
+        height: 50px;
+    }
+
+   
+    .dance-tour-section{
+        background-image: none;
+    }
+
+    .dance-section-title h2{
+        font-size: 40px;
+    }
+    .dance-section-title p{
+        font-size: 20px;
+    }
+    .card{
+        height: 500px;
+    }
+    .flip-card-back p{
+        font-size: 15px;
+    }
+
+    .statistics-title h2 {
+        font-size: 35px;
+    }
+
+    .statistics-title p {
+        font-size: 15px;
+    }
+
+    .number1,
+    .number2,
+    .number3 {
+        font-size: 30px;
+    }
+
+  
+.item{
+    margin-bottom: 70px;
+}
+   .statistics .name{
+    font-size: 20px;
+   }
+
+
+   .pricing-section-title h2 {
+    font-size: 35px;
+}
+
+.pricing-section-title p {
+    font-size: 15px;
+
+    max-width: 400px;
+
+}
+
+.under-pricing-section h2{
+    font-size: 60px;
+
+}
+.under-pricing-section button{
+    font-size: 20px;
+    width: 200px;
+}
+.under-pricing-section {
+    height: 650px;
+}
+
+.simon p{
+    font-size: 20px;
+}
+
+.simon h3{
+    font-size: 35px;
+}
+
+form{
+    width:90%;
+}
+.subs h3{
+    font-size: 35px;
+}
+.subs p{
+    font-size: 20px;
+}
+.subs button{
+    font-size: 14px;
+    width: 40%;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+}
+
+
+

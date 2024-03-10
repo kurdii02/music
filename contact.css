@@ -1,0 +1,262 @@
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #303030;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+ol {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+
+}
+nav a{
+    text-decoration: none;
+}
+.nav-list li:hover{
+    color: #e8631c;
+    transition: all 0.5s;
+}
+
+.nav-li {
+    margin: 0 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.logo {
+    width: 100px;
+   
+
+
+}
+
+.search {
+    width: 30px;
+    height: 25px;
+}
+
+
+
+
+.pricing-section{
+
+    padding: 0 20px 150px 20px;
+background-color: #303030;
+
+
+
+}
+.pricing-card{
+    width: 372px;
+height: 425px;
+border-radius: 8px;
+background-color: #e8631c;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+
+}
+
+
+
+
+
+.pricing-section-title p{
+   max-width: 900px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.pricing-section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+h2 {
+    font-size: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+}
+.pricing-card p{
+    width: 400px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    margin:15px ;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+
+.sloc img{
+    width: 25px;
+    height: 25px;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+height: 100%;
+padding: 40px;
+
+}
+
+.sloc{
+    display: flex;
+    justify-content:start;
+
+}
+.sloc p{
+    width: fit-content;
+    margin-top: 0;
+    margin-left: 5px;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+width: 100%;
+}
+
+
+.msg{
+  
+    background-color:#e8631c;
+padding: 150px 20px;
+
+}
+
+.msg h2{
+    margin: 0;
+    text-align: center;
+
+}
+
+form input{
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+
+textarea{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+
+button{
+    width: 250px;
+    height: 70px;
+    background-color: #303030;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #ffffff;
+    color: #303030;
+    transition: all 0.5s;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav-li {
+        font-size: 14px;
+    }
+
+    .search{
+        height: 20px;
+    }
+
+
+ h2{
+    font-size: 40px;
+ }
+
+ 
+}
+@media (max-width: 576px){
+    h2{
+        
+        font-size: 35px;
+    }
+    .pricing-section-title p{
+        font-size: 20px;
+    }
+    .pricing-section-title h2{
+        margin-top: 100px;
+    }
+    textarea{
+        font-size: 12px;
+    }
+    .nav-li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px){
+    .pricing-card{
+        width: 200px;
+    }
+    .pricing-card p{
+font-size: 14px;    }
+}

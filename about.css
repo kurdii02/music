@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #303030;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+ol {
+    list-style-type: none;
+    display: flex;
+   
+
+}
+
+.nav-li {
+    margin: 0 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+nav a{
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+
+}
+nav li:hover{
+    color:#e8631c;
+    transition: all 0.3s;
+}
+
+.search {
+    max-width: 2%;
+    height: 30px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+background-color: #ffffff;
+margin: 0;
+width: 100%;
+padding-bottom: 100px ;
+}
+.right-side p{
+font-size: 30px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+margin-left: 0;
+max-width: 850px;
+
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+       width: 70%;
+       text-align: center;
+       background-color: #e8631c;
+       padding: 20px;
+
+}
+.about img{
+    width:30%;
+}
+
+
+.about h2{
+    font-size: 75px;
+    text-transform:uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 0;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.statistics{
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 20px;
+background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("tools/about/counter.jpg"); 
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+.statistics-title h2{
+    font-size: 75px;
+    text-transform: uppercase;
+    color:#ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+    margin:0 0 60px 0;
+}
+
+
+
+.statistics-num{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.number1,.number2,.number3{
+    font-size: 67px;
+    text-transform: uppercase;
+    color:#ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+    margin: 0;
+}
+
+.statistics-num .name{
+font-size: 42px;
+color:#ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+margin: 0;
+}
+
+.item{
+  
+        margin: 0 100px;
+ 
+}
+#partnersSlider{
+    width: 80%;
+    margin: 0 auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 300px;
+}
+
+#partnersSlider img{
+width: 75%;
+margin-left: 50px;
+}
+
+.sam{
+    margin-top:100px;
+    margin-right: 50px;
+
+}
+.partners h3{
+
+ font-size: 75px;
+    text-transform: uppercase;
+    color:#e8631c;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.slick-arrow{
+    height: 100px;
+    width: 100px;
+
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav-li {
+        font-size: 14px;
+    }
+
+  
+
+    .search{
+        height: 20px;
+    }
+
+
+
+    .right-side h2{
+    font-size: 50px;
+}
+    .right-side p{
+        font-size: 16px;
+}
+.item{
+    margin-top:50px
+}
+
+.partners h3{
+font-size: 50px;
+
+}
+.sam{
+    margin-top: 50px;
+}
+
+
+}
+
+@media (max-width: 576px){
+    .nav-li {
+        font-size: 12px;
+    }
+    .search{
+        height: 20px;
+    }
+
+    .about img{
+        display: none;
+
+    }
+    .right-side{
+        width: 100%;
+    
+    }
+    .right-side h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .right-side p{
+        font-size: 16px;
+    }
+    .partners h3{
+        font-size: 40px;
+    }
+    #partnersSlider{
+        width: 100%;
+    }
+    .sam{
+        margin-top: 50px;
+    }
+}
