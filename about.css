@@ -174,7 +174,6 @@ margin: 0;
 #partnersSlider img{
     color: #fff;
     height: 100px;
-    line-height: 100px;
     margin: 0 10px 0 0;
     text-align: center;
     width: 150px;
@@ -227,8 +226,6 @@ font-size: 50px;
 
 }
 
-
-
 }
 
 @media (max-width: 576px){
@@ -264,5 +261,11 @@ font-size: 50px;
    
 #partnersSlider{
     width: 80%;
+    overflow: hidden;
+}
+#partnersSlider img{
+    width: 70px;
+    height: 70px;
+    
 }
 }
