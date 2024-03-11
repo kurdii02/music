@@ -242,12 +242,7 @@ margin: 0;
     left: 15px;
   }
 @media (min-width: 576px) and (max-width: 767px) {
-    .nav-li {
-        font-size: 14px;
-    }
-
-  
-
+   
     .search{
         height: 20px;
     }
