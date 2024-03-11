@@ -23,7 +23,7 @@ body {
 
 #icon.clicked .center {
     opacity: 0;
-    transition: all 0.2s;
+    height: 20px;
 
 }
 
@@ -36,9 +36,7 @@ right: 3px;
 
 }
 
-#icon.clicked{
-    width:50px;
-}
+
 
 .topnav{
     background-color: #303030;
@@ -51,6 +49,11 @@ right: 3px;
 #myLinks a{
     color: #ffffff;
     margin-right: 20px;
+}
+#myLinks a:hover{
+    color: #e8631c;
+    transition: all 0.3s;
+    
 }
 .logo {
     width: 100px;
@@ -68,7 +71,7 @@ right: 3px;
     width: 30px;
     height: 2px;
     margin-bottom: 5px;
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 .center{
     background-color:#ffffff;
@@ -76,13 +79,12 @@ right: 3px;
     height: 2px;
     margin-bottom: 5px;
     opacity: 1;
-    transition: all 0.2s;
 }
 .bottom{
     background-color:#ffffff;
     width: 30px;
     height: 2px;
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 
 
@@ -826,6 +828,7 @@ font-size: 20px;
         background-color: #333;
         position: relative;
         justify-content: space-between;
+        align-items: center;
         padding: 5px;
       }
       
