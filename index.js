@@ -42,7 +42,7 @@ function myFunction() {
   }
 
 
- document.getElementById("icon").addEventListener("click", myFunction,true);
+ document.getElementById("icon").addEventListener("click", myFunction);
 
 
 
