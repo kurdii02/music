@@ -301,6 +301,18 @@ font-size: 50px;
 .statistics{
     padding: 50px 10px;
 }
+.statistics h2{
+    font-size: 40px;
+}
+
+.statistics-num .name{
+font-size: 20px;
+}
+
+.number1{
+    font-size: 30px;
+    padding: 5px;
+}
     .about img{
         display: none;
 
