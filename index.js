@@ -1,4 +1,4 @@
-$.fn.jQuerySimpleCounter = function( options ) {
+jQuerySimpleCounter = function( options ) {
     var settings = $.extend({
         start:  0,
         end:    100,
