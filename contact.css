@@ -322,8 +322,9 @@ button:hover{
     textarea{
         font-size: 12px;
     }
-    .nav-li {
-        font-size: 12px;
+    
+    ::placeholder{
+        font-size: 14px;
     }
 }
 
