@@ -34,9 +34,10 @@ $('#partnersSlider').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true,         
-    nextArrow: '<i class="fa fa-arrow-right"></i>',
-  prevArrow: '<i class="fa fa-arrow-left"></i>',
+  speed:200,
+    arrows: false,
+    autoplay:true,         
+  
   responsive: [
     {
       breakpoint: 991,
